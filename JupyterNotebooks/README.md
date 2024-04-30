@@ -4,13 +4,13 @@ Jupyter Notebook collection with simple and reusable functions and scripts.
 ## Code Snippets, Easy to Recollect and Recreate
 
 Calendar.month()
-![Displaying a specific month of a year](../assets/python102/calendar.png)
+![Displaying a specific month of a year](../assets/JupyterNotebooks/calendar.png)
 
 Cube Root
-![Algorithm to find the cubic root of a number](../assets/python102/cube-root.png)
+![Algorithm to find the cubic root of a number](../assets/JupyterNotebooks/cube-root.png)
 
 Functions of `random` module
-![Career option suggested by Cosmologist parrot](../assets/python102/random-career-option.png)
+![Career option suggested by Cosmologist parrot](../assets/JupyterNotebooks/random-career-option.png)
 
 ## Contact Pointers
 - **LinkedIn:** <https://www.linkedin.com/in/rishirajopenminds>
