@@ -3,12 +3,7 @@
 num1 = 10
 num2 = 20
 
-# style a
 print("The sum of two predefined numbers is:", num1+num2)
-
-#style b
-# sum = num1+num2
-# print("The sum of numbers is",sum)
 
 # ====
 
