@@ -1,0 +1,37 @@
+from tweepy.streaming import StreamListener
+from tweepy import OAuthHandler
+from tweepy import Stream
+from kafka import SimpleProducer, KafkaClient
+import time
+
+access_token = "748200460067045376-zYxRRyxiPIywcw2IV50IQiIxzQVN5FZ"
+access_token_secret =  "c6dRkeRbgPqtbWAOTz0OfOMpBvhZS6KqWFjtEqHBEv7me"
+consumer_key =  "ukUrCrJdd6MQQd0HQBzCDwcLq"
+consumer_secret =  "VCf2wU1MhedUFnQeCwffzstdVkF7rbURzoNNDAdPPvbWfDtggP"
+kafka_endpoint = "ip-20-0-32-4.ap-south-1.compute.internal:9092"
+kafka_topic = "rk_hadoop"
+twitter_hash_tag = "RamNavami"
+time_limit = 10
+
+class StdOutListener(StreamListener):
+	def __init__(self, time_limit=time_limit):
+		self.start_time = time.time()
+		self.limit = time_limit
+		super(StdOutListener, self).__init__()
+	def on_data(self, data):
+		if (time.time() - self.start_time) < self.limit:
+            #msg = json.loads(data)
+			producer.send_messages(kafka_topic, data.encode('utf-8'))
+			print (data)
+			return True
+		exit(0)
+	def on_error(self, status):
+		print (status)
+
+kafka = KafkaClient(kafka_endpoint)
+producer = SimpleProducer(kafka)
+l = StdOutListener()
+auth = OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token, access_token_secret)
+stream = Stream(auth, l)
+stream.filter(track=twitter_hash_tag)
