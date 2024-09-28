@@ -26,3 +26,14 @@ num = int(input("Enter a number to get the factorial of: "))
 factorial = fact(num)
 print("The factorial of",num,"is:",factorial)
 # method 2 (using recursion) - end
+
+# method 3 - start
+def factorial(num):
+    if "int" not in str(type(num)):
+        return None
+    if num == 0:
+        return 1
+    elif num > 0:
+        return int(num) * factorial(num-1)
+    return None
+# method 3 - end
