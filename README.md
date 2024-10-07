@@ -1,4 +1,4 @@
-# PythonSnippets
+# Python Snippets
 Mathematics and Data Science go hand in hand, hence it always makes sense to have a common repository for Python 101 and Notebooks. Python scripts, programs and code snippets to demonstrate the capabilities of Python language (as of its data structures and API), algorithms implemented using Python language and the methods to refer for use in other projects.
 
 ## Python101
