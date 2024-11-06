@@ -1,21 +1,17 @@
-# method 1 (using math module)
 import math
 
+# method 1 (using math module)
 num = 49
-
-# style a
 sqrt = math.sqrt(num)
-print ("The square root of the number is",sqrt)
+print (f"The square root of {num} is {sqrt}")
 
-# style b
+# method 2 (using math module)
 num = 64
 sqrt = math.pow(num,0.5)
-print ("The square root of the number is",sqrt)
+print (f"The square root of {num} is {sqrt}")
 
-# ===
-
-# method 2 (using exponentiation operator **)
+# method 3 (using exponentiation operator **)
 num = float(input("Enter a number to get its square root: "))
 
 sqrt = num**(0.5) # sqrt = num**(1/2)
-print ("The square root of the number is",sqrt)
+print (f"The square root of the input number {num} is {sqrt}")
