@@ -1,39 +1,39 @@
 class Person:
     def __init__(self,name,age):
-        self.name = name
-        self.age = age
+        self.__name = name
+        self.__age = age
     def getDetails(self):
-        return "Person:: ("+self.name+", "+str(self.age)+" years old)"
+        return "Person:: ("+self.__name+", "+str(self.__age)+" years old)"
 class Employee(Person):
-    nEmployees = 0
-    increment = 0.01
+    __nEmployees = 0
+    __increment = 0.01
     def __init__(self,name,age, sal, increment,username):
         super().__init__(name,age)
-        self.id = name
-        self.name = name
-        self.salary = sal
-        self.increment = increment
-        self.username=username
-        Employee.nEmployees += 1
+        self.__id = name
+        self.__name = name
+        self.__salary = sal
+        self.__increment = increment
+        self.__username=username
+        Employee.__nEmployees += 1
 
     @property
-    def email(self):
-        if self.username == None:
+    def __email(self):
+        if self.__username == None:
             return "Email ID not available"
-        return self.username+"@commail.com"
+        return self.__username+"@commail.com"
 
-    @email.setter
+    @__email.setter
     def email(self,new_email_id):
-        self.username=new_email_id
+        self.__username=new_email_id
 
-    @email.deleter
+    @__email.deleter
     def email(self):
-        self.username=None
+        self.__username=None
     def __str__(self):
-        return super().getDetails()+", "+self.email + "\nwith salary "+ "{:.2f}".format(self.salary)+" and increment rate "+"{:.2f}".format(self.increment)
+        return super().getDetails()+", "+self.__email + "\nwith salary "+ "{:.2f}".format(self.__salary)+" and increment rate "+"{:.2f}".format(self.__increment)
 
     def raiseMySalaryWithMyProfileRate(self):
-        self.salary += self.salary * self.increment
+        self.__salary += self.__salary * self.__increment
 
     @classmethod
     def from_str(cls, csv_data_str):
