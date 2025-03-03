@@ -13,5 +13,5 @@ print (f"The square root of {num} is {sqrt}")
 # method 3 (using exponentiation operator **)
 num = float(input("Enter a number to get its square root: "))
 
-sqrt = num**(0.5) # sqrt = num**(1/2)
+sqrt = num**(0.5)
 print (f"The square root of the input number {num} is {sqrt}")
