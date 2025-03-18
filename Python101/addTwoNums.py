@@ -1,8 +1,6 @@
 # method 1 (with predefined numbers)
-
 num1 = 10
 num2 = 20
-
 print("The sum of two predefined numbers is:", num1+num2)
 
 # ====

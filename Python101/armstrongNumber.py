@@ -7,8 +7,8 @@ orderLengthOfNumber = len(str(n))
 isOrNot = " not "
 
 while 0 != temp:
-    digit = temp%10
-    sum += digit**orderLengthOfNumber
+    digit = temp % 10
+    sum += digit ** orderLengthOfNumber
     temp //= 10
 if sum == n:
     isOrNot = " "
