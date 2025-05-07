@@ -3,6 +3,9 @@ Mathematics and Data Science go hand in hand, hence it always makes sense to hav
 
 ## Python101
 Python scripts and programs with PDF processing (text to speech generation) and Mathematical functions. Some of them are:
+- list comprehension
+- dict comprehension
+- set comprehension
 - addTwoNums.py
 - areaOfTriangleByBaseAndHeight.py
 - armstrongNumber.py
