@@ -27,7 +27,7 @@ factorial = fact(num)
 print("The factorial of",num,"is:",factorial)
 # method 2 (using recursion) - end
 
-# method 3 - start
+# method 3 (better than methods 1 and 2) - start
 def factorial(num):
     if "int" not in str(type(num)):
         return None
