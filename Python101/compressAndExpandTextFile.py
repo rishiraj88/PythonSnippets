@@ -1,5 +1,6 @@
 # Python code​​​​​​‌​‌‌‌‌​‌‌​​​​​​​‌‌​​‌‌​‌‌ below
-import json 
+import json
+import os
 
 def encodeString(stringVal):
     encodedList = []
@@ -33,11 +34,11 @@ def decodeFile(filename):
 
 
 ################
-original_filesize = os.path.getsize("10_04_challenge_art.txt")
+original_filesize = os.path.getsize("./new 1.txt")
 print(f'Original file size: {original_filesize}')
-Answer.encodeFile('10_04_challenge_art.txt', '10_04_challenge_art_encoded.txt')
+encodedFile = encodeFile('new 1.txt', 'new 1_encoded.txt')
 
-new_filesize = os.path.getsize("10_04_challenge_art_encoded.txt")
+new_filesize = os.path.getsize("./new 1_encoded.txt")
 print(f'New file size: {new_filesize}')
-decoded = Answer.decodeFile('10_04_challenge_art_encoded.txt')
-print(decoded)
+decodedContent = encodedFile.decodeFile('new 1_encoded.txt')
+print(decodedContent)
