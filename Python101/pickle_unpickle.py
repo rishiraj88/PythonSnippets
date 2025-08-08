@@ -6,6 +6,9 @@ class ToDo:
         self.important=important
         self.category=category
 
+    def __repr__(self):
+        return f"{self.title} !{'imp' if self.important else 'trivial'} category: {self.category} "
+
 todos = [ToDo("Buy food",True)
          ,ToDo("Evening walk",False)
          ,ToDo("Cook dinner",True)
