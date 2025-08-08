@@ -1,12 +1,13 @@
 import sys
+import pickle
 
 tasks_datafile_name="todo_datafile.txt"
 tasks=[]
 
 #read tasks from file
 try:
-    tasks_datafile = open(tasks_datafile_name,"r")
-    tasks= tasks_datafile.readlines()
+    tasks_datafile = open(tasks_datafile_name,"rb")
+    tasks= pickle.load(tasks_datafile)
     tasks_datafile.close()
 except:
     pass
@@ -33,8 +34,8 @@ if len(sys.argv) >= 3 and sys.argv[1].lower() == "del":
 print(tasks)
 
 #save tasks to the file
-tasks_datafile = open(tasks_datafile_name,"w")
-tasks_datafile.writelines(tasks)
+tasks_datafile = open(tasks_datafile_name,"wb")
+pickle.dump(tasks,tasks_datafile)
 tasks_datafile.close()
 
 #print tasks
