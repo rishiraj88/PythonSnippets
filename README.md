@@ -1,7 +1,7 @@
 # A Collection of Algorithms and Notebooks 
 Mathematics and Data Science go hand in hand, hence it always makes sense to have a common repository for Python 101 and Notebooks. Python scripts, programs and object hierarcies to demonstrate the capabilities of Python language (as of its data structures and API), algorithms implemented using Python language and the methods to refer for use in other projects.
 
-## Python101
+## Python 101
 Python scripts and programs with PDF processing (text to speech generation) and Mathematical functions. Some of them are:
 - list comprehension
 - dict comprehension
@@ -41,11 +41,12 @@ Python scripts and programs with PDF processing (text to speech generation) and 
 - swapTwoNumbers.py
 - temperatureCelToFahr.py
 
-## Jupyter Notebooks
+## Jupyter notebooks
 Notebooks with scenarios of extracting random values out of arrays and some complex Math formulas. Some of them are:
 - calendar.ipynb
 - cuberoot.ipynb
 - randomuse.ipynb
+- and many more...
 
 ## For any queries, feel free to utilise the contact points at:
 - **LinkedIn:** <https://www.linkedin.com/in/rishirajopenminds>
