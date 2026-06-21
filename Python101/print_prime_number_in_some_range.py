@@ -22,3 +22,14 @@ if "" != outputStatus:
     print(list)
 else:
     print("No prime numbers found between",lower,"to",str(higher)+".")
+
+## tldr
+##def allPrimesUpTo(num):
+##    # Your code goes here.
+##    primes=[]
+##    for number in range(2,num):
+##        for factor in primes if factor < int(number **0.5)+1 :
+##           if number % factor !=0:
+##                print(f'{number} is prime')
+##                primes.append(number)
+##    return primes
